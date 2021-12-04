@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/38890b9b7f.js" crossorigin="anonymous"></script>
+    <title>Figuras geometricas</title>
+    <style>
+        body {
+            margin: 0 0;
+            display: flex;
+            background-color: #D3E4CD;
+        }
+
+        .container {
+            
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        header {
+           width: 20%;
+           margin: auto;
+        
+        }
+
+        .conte {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .cards {
+            margin: auto;
+            width: 30%;
+            height: 270px;
+            
+            background-color: #F2DDC1;
+            min-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: solid 2px;
+        }
+
+        h2{
+            background-color: #C3B091;
+            margin-top: 0;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        form{
+            padding: 10px 20px;
+        }
+
+        input{
+            background-color: #E2C2B9;
+            border: solid 1px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+
+        }
+
+        button{
+            border: solid 1px;
+            background-color: #97BFB4;
+        }
+
+        button:hover{
+            transform: scale(1.1, 1.1);
+        }    
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Figuras geometricas Che!
+            </h1>
+            
+            <div>
+            <p>Este es el primer taller del curso practico js</p>
+        </div>
+        </header>
+        <div class="conte">
+            <section class="cards">
+                <h2><i class="far fa-square"></i> Calcula el area y perimetro del cuadrado</h2>
+                <form action="">
+                    <label for="inputC">Escribe el lado de un cuadrado</label>
+                    <input id="inputC" type="number">
+                    <div class="botones">
+
+                        <button type="button" onclick="calcularPerCua()">
+                            Calcular perimetro
+                        </button>
+                        <button type="button" onclick="calcularAreCua()">
+                            Calcular area
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cards">
+                <h2><i class="far fa-caret-square-up"></i> Calcula el area y perimetro del triangulo</h2>
+                <form action="">
+                    <label for="inputT1">Escribe el lado 1 o 2 del triangulo</label>
+                    <input id="inputT1" type="number">
+                    <br><br>
+                    <label for="inputT2">Escribe la base del triangulo</label>
+                    <input id="inputT2" type="number">
+                    <div class="botones">
+                        <button type="button" onclick="calcularPerTri()">
+                            Calcular perimetro
+                        </button>
+                        <button type="button" onclick="calcularAreTri()">
+                            Calcular area
+                        </button>
+                        <button type="button" onclick="calcularAltTri()">
+                            Calcular altura
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cards">
+                <h2><i class="far fa-circle"></i> Calcula el area y perimetro del circulo</h2>
+                <form action="">
+                    <label for="inputC1">Escribe el radio del circulo</label>
+                    <input id="inputC1" type="number">
+                    <div class="botones">
+
+                        <button type="button" onclick="calcularPerCir()">
+                            Calcular perimetro
+                        </button>
+                        <button type="button" onclick="calcularAreCir()">
+                            Calcular area
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="figuras.js"></script>
+</body>
+
+</html>
